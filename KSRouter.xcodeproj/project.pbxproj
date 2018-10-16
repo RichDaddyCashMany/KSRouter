@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033C1CC82176094100183CD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C1CC72176094100183CD9 /* AppDelegate.m */; };
+		033C1CCB2176094100183CD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C1CCA2176094100183CD9 /* ViewController.m */; };
+		033C1CCE2176094100183CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033C1CCC2176094100183CD9 /* Main.storyboard */; };
+		033C1CD02176094600183CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033C1CCF2176094600183CD9 /* Assets.xcassets */; };
+		033C1CD32176094600183CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033C1CD12176094600183CD9 /* LaunchScreen.storyboard */; };
+		033C1CD62176094600183CD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C1CD52176094600183CD9 /* main.m */; };
+		033C1CE121760A5F00183CD9 /* KSRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C1CE021760A5F00183CD9 /* KSRouter.m */; };
+		033C1CE521760AD700183CD9 /* ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 033C1CE421760AD700183CD9 /* ModuleA.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		033C1CC32176094100183CD9 /* KSRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		033C1CC62176094100183CD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		033C1CC72176094100183CD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		033C1CC92176094100183CD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		033C1CCA2176094100183CD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		033C1CCD2176094100183CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		033C1CCF2176094600183CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		033C1CD22176094600183CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		033C1CD42176094600183CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033C1CD52176094600183CD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		033C1CDF21760A5F00183CD9 /* KSRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRouter.h; sourceTree = "<group>"; };
+		033C1CE021760A5F00183CD9 /* KSRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSRouter.m; sourceTree = "<group>"; };
+		033C1CE221760A8100183CD9 /* KSRouterDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSRouterDefine.h; sourceTree = "<group>"; };
+		033C1CE321760AD700183CD9 /* ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleA.h; sourceTree = "<group>"; };
+		033C1CE421760AD700183CD9 /* ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleA.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		033C1CC02176094100183CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033C1CBA2176094100183CD9 = {
+			isa = PBXGroup;
+			children = (
+				033C1CC52176094100183CD9 /* KSRouter */,
+				033C1CC42176094100183CD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		033C1CC42176094100183CD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				033C1CC32176094100183CD9 /* KSRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		033C1CC52176094100183CD9 /* KSRouter */ = {
+			isa = PBXGroup;
+			children = (
+				033C1CDC217609E100183CD9 /* KSRouter */,
+				033C1CDE217609FD00183CD9 /* Demo */,
+				033C1CC62176094100183CD9 /* AppDelegate.h */,
+				033C1CC72176094100183CD9 /* AppDelegate.m */,
+				033C1CC92176094100183CD9 /* ViewController.h */,
+				033C1CCA2176094100183CD9 /* ViewController.m */,
+				033C1CCC2176094100183CD9 /* Main.storyboard */,
+				033C1CCF2176094600183CD9 /* Assets.xcassets */,
+				033C1CD12176094600183CD9 /* LaunchScreen.storyboard */,
+				033C1CD42176094600183CD9 /* Info.plist */,
+				033C1CD52176094600183CD9 /* main.m */,
+			);
+			path = KSRouter;
+			sourceTree = "<group>";
+		};
+		033C1CDC217609E100183CD9 /* KSRouter */ = {
+			isa = PBXGroup;
+			children = (
+				033C1CE221760A8100183CD9 /* KSRouterDefine.h */,
+				033C1CDF21760A5F00183CD9 /* KSRouter.h */,
+				033C1CE021760A5F00183CD9 /* KSRouter.m */,
+			);
+			path = KSRouter;
+			sourceTree = "<group>";
+		};
+		033C1CDE217609FD00183CD9 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				033C1CE321760AD700183CD9 /* ModuleA.h */,
+				033C1CE421760AD700183CD9 /* ModuleA.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		033C1CC22176094100183CD9 /* KSRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033C1CD92176094600183CD9 /* Build configuration list for PBXNativeTarget "KSRouter" */;
+			buildPhases = (
+				033C1CBF2176094100183CD9 /* Sources */,
+				033C1CC02176094100183CD9 /* Frameworks */,
+				033C1CC12176094100183CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSRouter;
+			productName = KSRouter;
+			productReference = 033C1CC32176094100183CD9 /* KSRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		033C1CBB2176094100183CD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = HJaycee;
+				TargetAttributes = {
+					033C1CC22176094100183CD9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 033C1CBE2176094100183CD9 /* Build configuration list for PBXProject "KSRouter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 033C1CBA2176094100183CD9;
+			productRefGroup = 033C1CC42176094100183CD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				033C1CC22176094100183CD9 /* KSRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033C1CC12176094100183CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033C1CD32176094600183CD9 /* LaunchScreen.storyboard in Resources */,
+				033C1CD02176094600183CD9 /* Assets.xcassets in Resources */,
+				033C1CCE2176094100183CD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		033C1CBF2176094100183CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033C1CE121760A5F00183CD9 /* KSRouter.m in Sources */,
+				033C1CCB2176094100183CD9 /* ViewController.m in Sources */,
+				033C1CD62176094600183CD9 /* main.m in Sources */,
+				033C1CC82176094100183CD9 /* AppDelegate.m in Sources */,
+				033C1CE521760AD700183CD9 /* ModuleA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		033C1CCC2176094100183CD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033C1CCD2176094100183CD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		033C1CD12176094600183CD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				033C1CD22176094600183CD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		033C1CD72176094600183CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		033C1CD82176094600183CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		033C1CDA2176094600183CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KSRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJaycee.KSRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		033C1CDB2176094600183CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KSRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJaycee.KSRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		033C1CBE2176094100183CD9 /* Build configuration list for PBXProject "KSRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033C1CD72176094600183CD9 /* Debug */,
+				033C1CD82176094600183CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033C1CD92176094600183CD9 /* Build configuration list for PBXNativeTarget "KSRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033C1CDA2176094600183CD9 /* Debug */,
+				033C1CDB2176094600183CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 033C1CBB2176094100183CD9 /* Project object */;
+}
