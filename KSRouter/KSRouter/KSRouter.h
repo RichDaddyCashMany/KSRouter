@@ -14,7 +14,7 @@ typedef char * KSRouterURI;
 #define KSDATA(sectname) __attribute((used, section("__DATA,"#sectname" ")))
 
 #define KSRouterRegister(target,method) \
-class KSMediator; static char *_##target##_##method##_ KSDATA(KSRouter) = "{\""#target"\":\""#method"\"}";
+class KSMediator; static char *_##target##_##method##_ KSDATA(KSInvocatations) = "{\""#target"\":\""#method"\"}";
 
 @interface KSRouter : NSObject
 
