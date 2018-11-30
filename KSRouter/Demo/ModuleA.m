@@ -14,10 +14,10 @@
     NSLog(@"直接调用");
 }
 
-- (id)getSomeValue:(NSDictionary *)arg {
+- (Class)getSomeValue:(NSDictionary *)arg {
     NSLog(@"带返回值的调用方式");
     
-    return @1;
+    return [NSObject class];
 }
 
 - (void)runWithCallBack:(NSDictionary *)arg {

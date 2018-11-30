@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // 1 直接调用
-    [KSRouter routerToURI:_ModuleA_runDirectly_ args:nil];
+//    [KSRouter routerToURI:_ModuleA_runDirectly_ args:nil];
     
     // 2 带返回值的调用方式
     __unused id result = [KSRouter routerToURI:_ModuleA_getSomeValue_ args:nil];

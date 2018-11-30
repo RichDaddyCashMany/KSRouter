@@ -119,12 +119,14 @@ void _init() {
     
     id returnValue;
     switch (returnType[0] == _C_CONST ? returnType[1] : returnType[0]) {
+#define KSROUTER_RET_OBJECT \
+void *value; \
+[invocation getReturnValue:&value]; \
+id object = (__bridge id)value; \
+returnValue = object; \
+break;
         case _C_ID: {
-            void *value;
-            [invocation getReturnValue:&value];
-            id object = (__bridge id)value;
-            returnValue = object;
-            break;
+            KSROUTER_RET_OBJECT
         }
             
 #define KSROUTER_RET_CASE(typeString, type) \
@@ -170,7 +172,9 @@ break;                                                         \
         }
         case _C_CHARPTR:
         case _C_PTR:
-        case _C_CLASS:
+        case _C_CLASS:{
+            KSROUTER_RET_OBJECT
+        }
         case _C_VOID:
         default:{
             returnValue = nil;
