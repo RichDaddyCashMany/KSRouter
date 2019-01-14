@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KSRouter"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "支持自动注册的的iOS组件化解决方案"
   s.homepage     = "https://github.com/HJaycee/KSRouter"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }

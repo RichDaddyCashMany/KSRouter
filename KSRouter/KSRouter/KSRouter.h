@@ -19,5 +19,6 @@ class _; static char *_##target##_##method##_ KSDATA(KSInvocatations) = "{\""#ta
 @interface KSRouter : NSObject
 
 + (id)routerToURI:(KSRouterURI)URI args:(NSDictionary *)args;
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args;
 
 @end

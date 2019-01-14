@@ -86,14 +86,14 @@ void _init() {
             NSString *target = [json allKeys][0];
             NSString *action  = [json allValues][0];
             if (target && action) {
-                return [self _performTarget:target action:action args:args];
+                return [self performTarget:target action:action args:args];
             }
         }
     }
     return nil;
 }
 
-+ (id)_performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args {
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args {
     NSObject *target = [NSClassFromString(targetName) new];
     SEL action = NSSelectorFromString([actionName stringByAppendingString:@":"]);
     if (!target || !action) {
