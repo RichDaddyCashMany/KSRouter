@@ -33,6 +33,11 @@
     
     // 4 调用其他组件
     [KSRouter routerToURI:_ModuleA_callOtherModule_ args:nil];
+    
+    NSError *e = nil;
+    [KSRouter performTarget:@"ModuleA" action:@"b" args:nil error:&e];
+    
+    
 }
 
 

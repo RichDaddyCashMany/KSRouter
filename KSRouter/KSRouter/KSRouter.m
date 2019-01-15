@@ -94,25 +94,25 @@ void _init() {
 }
 
 + (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args {
-    return [self performTarget:targetName action:actionName args:args callback:nil];
+    return [self performTarget:targetName action:actionName args:args error:nil];
 }
 
-+ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args callback:(void (^)(BOOL, NSString *, NSString *, NSDictionary *))callback {
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args error:(NSError *__autoreleasing *)error {
     NSObject *target = [NSClassFromString(targetName) new];
-    SEL action = NSSelectorFromString([actionName stringByAppendingString:@":"]);
-    if (!target || !action) {
-        if (callback) callback(NO, targetName, actionName, args);
+    if (!target) {
+        *error = [NSError errorWithDomain:@"KSRouterPerformError" code:-1 userInfo:@{@"reason": @"module not exists"}];
         return nil;
     }
     
+    SEL action = NSSelectorFromString([actionName stringByAppendingString:@":"]);
     if (![target respondsToSelector:action]) {
-        if (callback) callback(NO, targetName, actionName, args);
+        *error = [NSError errorWithDomain:@"KSRouterPerformError" code:-2 userInfo:@{@"reason": @"method not exists"}];
         return nil;
     }
     
     NSMethodSignature *methodSignature = [target methodSignatureForSelector:action];
     if (!methodSignature) {
-        if (callback) callback(NO, targetName, actionName, args);
+        
         return nil;
     }
     
@@ -187,8 +187,6 @@ break;                                                         \
             returnValue = nil;
         }
     }
-    
-    if (callback) callback(YES, targetName, actionName, args);
     
     return returnValue;
 }

@@ -22,6 +22,6 @@ class _; static char *_##target##_##method##_ KSDATA(KSInvocatations) = "{\""#ta
 
 + (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args;
 
-+ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args callback:(void(^)(BOOL isSuccess, NSString *targetName, NSString *actionName, NSDictionary *args))callback;
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args error:(NSError **)error;
 
 @end
