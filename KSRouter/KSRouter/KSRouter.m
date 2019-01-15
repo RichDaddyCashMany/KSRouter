@@ -94,18 +94,25 @@ void _init() {
 }
 
 + (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args {
+    return [self performTarget:targetName action:actionName args:args callback:nil];
+}
+
++ (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args callback:(void (^)(BOOL, NSString *, NSString *, NSDictionary *))callback {
     NSObject *target = [NSClassFromString(targetName) new];
     SEL action = NSSelectorFromString([actionName stringByAppendingString:@":"]);
     if (!target || !action) {
+        if (callback) callback(NO, targetName, actionName, args);
         return nil;
     }
     
     if (![target respondsToSelector:action]) {
+        if (callback) callback(NO, targetName, actionName, args);
         return nil;
     }
     
     NSMethodSignature *methodSignature = [target methodSignatureForSelector:action];
     if (!methodSignature) {
+        if (callback) callback(NO, targetName, actionName, args);
         return nil;
     }
     
@@ -180,6 +187,8 @@ break;                                                         \
             returnValue = nil;
         }
     }
+    
+    if (callback) callback(YES, targetName, actionName, args);
     
     return returnValue;
 }
