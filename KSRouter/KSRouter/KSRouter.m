@@ -15,6 +15,9 @@
 #include <dlfcn.h>
 #include <mach-o/ldsyms.h>
 
+const NSErrorDomain KSRouterPerformError = @"KSRouterPerformError";
+const NSErrorUserInfoKey KSRouterReasonKey = @"reason";
+
 NSArray<NSString *>* KSReadConfiguration(char *sectionName,const struct mach_header *mhp) {
     NSMutableArray *configs = [NSMutableArray array];
     unsigned long size = 0;
@@ -100,13 +103,17 @@ void _init() {
 + (id)performTarget:(NSString *)targetName action:(NSString *)actionName args:(NSDictionary *)args error:(NSError *__autoreleasing *)error {
     NSObject *target = [NSClassFromString(targetName) new];
     if (!target) {
-        *error = [NSError errorWithDomain:@"KSRouterPerformError" code:-1 userInfo:@{@"reason": @"module not exists"}];
+        if (error) {
+            *error = [NSError errorWithDomain:KSRouterPerformError code:-1 userInfo:@{KSRouterReasonKey: @"module not exists"}];
+        }
         return nil;
     }
     
     SEL action = NSSelectorFromString([actionName stringByAppendingString:@":"]);
     if (![target respondsToSelector:action]) {
-        *error = [NSError errorWithDomain:@"KSRouterPerformError" code:-2 userInfo:@{@"reason": @"method not exists"}];
+        if (error) {
+            *error = [NSError errorWithDomain:KSRouterPerformError code:-2 userInfo:@{KSRouterReasonKey: @"method not exists"}];
+        }
         return nil;
     }
     

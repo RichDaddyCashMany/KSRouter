@@ -36,7 +36,8 @@
     
     NSError *e = nil;
     [KSRouter performTarget:@"ModuleA" action:@"b" args:nil error:&e];
-    
+    e.code == -1; // no module
+    e.code == -2; // mo method
     
 }
 
